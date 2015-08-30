@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
         intentListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> contactsList, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(MainActivity.this, ContactPageActivity.class);
-                i.putExtra("Object",contactsList.getItemIdAtPosition(position));
+                i.putExtra("Object",contactsList.get(position));
                 startActivityForResult(i, 0);
             }
         });
