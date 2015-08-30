@@ -1,9 +1,11 @@
 package com.fernandaochoa.lab4;
 
+import java.io.Serializable;
+
 /**
  * Created by monsh on 29/08/2015.
  */
-public class ContactObject {
+public class ContactObject implements Serializable {
     private static final long serialVersionUID =1L;
     private String name;
     private String phone;
