@@ -12,7 +12,6 @@ public class ContactObject implements Serializable {
     private String website;
 
     public ContactObject(String name, String phone, String website){
-        super();
         this.name = name;
         this.phone = phone;
         this.website = website;
